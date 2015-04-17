@@ -10,3 +10,4 @@ Add button: Adds item
 Move button: move item - must be touch and keyboard friendly  
 Change Add li to div  
 Remember why I added a Settings link?  
+Dry out the javascript  
