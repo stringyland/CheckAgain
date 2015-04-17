@@ -1,7 +1,10 @@
 
+var masterSection = $('#ca-master');
 var masterList = $('.m-master');
 var masterButtons = $('.m-master li button');
 var masterTools = $('#ca-master-tools');
+
+var listSection = $('#ca-list-container');
 var listTools = $('#ca-list-tools');
 var listButtons = $('.m-list li button');
 var editMaster = $('#ca-edit-master');
@@ -30,7 +33,7 @@ $(document).ready(function() {
 	$('#ca-back-master').click(function(event) {
 		//event.preventDefault();
 		resetEditList();
-		masterList.removeClass('hidden');
+		masterSection.removeClass('hidden');
 		$('div.l-list').each(function(i) {
 			if ($(this).hasClass('hidden') == false) {
 				$(this).addClass('hidden');
@@ -58,6 +61,7 @@ $(document).ready(function() {
 // FUNCTIONS 
 // ---------------------------
 
+// EDIT LINKS
 function editMasterList() {
 	$(masterButtons).toggleClass('hidden');
 	$(editMaster).toggleClass('js-is-editing');
@@ -90,6 +94,8 @@ function editListList() {
 	}
 }	
 
+// LIST LINKS
+
 function showList(whichTitle) {
 	//turn title id into list id
 	var stringArray = whichTitle.split('-'); //ca-ml-X, we want to find out X
@@ -98,27 +104,10 @@ function showList(whichTitle) {
 	
 	// show that list, hide master
 	$(whichList).removeClass('hidden');
-	masterList.addClass('hidden');
+	masterSection.addClass('hidden');
 	
 	switchTools();	
 }
-
-function toggleEditButtons(whichSet) {
-	if (whichSet = "master") {
-		$(masterList + ' > li > button').toggleClass('hidden');
-	} else {
-		//figure out which list or do all?
-	}
-}
-
-function toggleEditText(whichLink) {
-	if (whichLink = "master") {
-		//toggle A and B
-	} else {
-		//ugh lists
-	}
-}
-
 
 function switchTools(){
 	listTools.toggleClass('hidden');
