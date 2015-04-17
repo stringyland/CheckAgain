@@ -15,54 +15,53 @@
 			<div id="ca-master" class="l-master">
 				<h2>Master List</h2>
 				<ul class="m-master">
-					<li><button hidden>Delete List 1</button><a href="#ca-list-1" id="ca-title-1">List 1 Title</a><button hidden>Move</button></li>
-					<li><button hidden>Delete List 2</button><a href="#ca-list-2" id="ca-title-2">List 2 Title</a><button hidden>Move</button></li>
-					<li><button hidden>Delete List 3</button><a href="#ca-list-3" id="ca-title-3">List 3 Title</a><button hidden>Move</button></li>
-					<li hidden><form><label for="newList">New list:</label><input type="text" id="newList" required><button>Add</button></form></li>
+					<li><button class="btn btn-default hidden">Delete List 1</button> <a href="#ca-list-1" id="ca-title-1">List 1 Title</a></li>
+					<li><button class="btn btn-default hidden">Delete List 2</button> <a href="#ca-list-2" id="ca-title-2">List 2 Title</a> </li>
+					<li><button class="btn btn-default hidden">Delete List 3</button> <a href="#ca-list-3" id="ca-title-3">List 3 Title</a> </li>
+					<li class="hidden"><form><label for="newList">New list:</label><input type="text" id="newList" required><button>Add</button></form></li>
 				</ul>	
 			</div>
 			<div id="ca-list-1" class="l-list hidden">
 				<h2>List Title 1</h2>
 				<ul class="m-list">
-					<li><button hidden>Delete Item 1</button>Item 1<button hidden>Move</button></li>
-					<li><button hidden>Delete Item 1</button>Item 2<button hidden>Move</button></li>
-					<li><button hidden>Delete Item 1</button>Item 3<button hidden>Move</button></li>
-					<li><button hidden>Delete Item 1</button>Item 4<button hidden>Move</button></li>
-					<li hidden><form><label for="newItem">Next step:</label><input type="text" id="newStep" required><button>Add</button></form></li>
+					<li><button class="btn btn-default hidden">Delete Item 1</button>Item 1</li>
+					<li><button class="btn btn-default hidden">Delete Item 2</button>Item 2</li>
+					<li><button class="btn btn-default hidden">Delete Item 3</button>Item 3</li>
+					<li><button class="btn btn-default hidden">Delete Item 4</button>Item 4</li>
+					<li class="hidden"><form><label for="newItem">Next step:</label><input type="text" id="newStep" required><button>Add</button></form></li>
 				</ul>
 			</div>
 			<div id="ca-list-2" class="l-list hidden">
 				<h2>List Title 2</h2>
 				<ul class="m-list">
-					<li><button hidden>Delete Item 1</button>Item 1<button hidden>Move</button></li>
-					<li><button hidden>Delete Item 1</button>Item 2<button hidden>Move</button></li>
-					<li><button hidden>Delete Item 1</button>Item 3<button hidden>Move</button></li>
-					<li><button hidden>Delete Item 1</button>Item 4<button hidden>Move</button></li>
-					<li hidden><form><label for="newItem">Next step:</label><input type="text" id="newStep" required><button>Add</button></form></li>
-					<li><button hidden>Delete Item 1</button>Item 1<button hidden>Move</button></li>
-					<li><button hidden>Delete Item 1</button>Item 2<button hidden>Move</button></li>
-					<li><button hidden>Delete Item 1</button>Item 3<button hidden>Move</button></li>
-					<li><button hidden>Delete Item 1</button>Item 4<button hidden>Move</button></li>
-					<li hidden><form><label for="newItem">Next step:</label><input type="text" id="newStep" required><button>Add</button></form></li>
+					<li><button class="btn btn-default hidden">Delete Item 1</button>Item 1</li>
+					<li><button class="btn btn-default hidden">Delete Item 2</button>Item 2</li>
+					<li><button class="btn btn-default hidden">Delete Item 3</button>Item 3</li>
+					<li><button class="btn btn-default hidden">Delete Item 4</button>Item 4</li>
+					<li><button class="btn btn-default hidden">Delete Item 5</button>Item 5</li>
+					<li><button class="btn btn-default hidden">Delete Item 6</button>Item 6</li>
+					<li><button class="btn btn-default hidden">Delete Item 7</button>Item 7</li>
+					<li><button class="btn btn-default hidden">Delete Item 8</button>Item 8</li>
+					<li class="hidden"><form><label for="newItem">Next step:</label><input type="text" id="newStep" required><button>Add</button></form></li>
 				</ul>
 			</div>
 			<div id="ca-list-3" class="l-list hidden">
 				<h2>List Title 3</h2>
 				<ul class="m-list">
-					<li><button hidden>Delete Item 1</button>Item 1<button hidden>Move</button></li>
-					<li><button hidden>Delete Item 1</button>Item 2<button hidden>Move</button></li>
-					<li><button hidden>Delete Item 1</button>Item 3<button hidden>Move</button></li>
-					<li><button hidden>Delete Item 1</button>Item 4<button hidden>Move</button></li>
-					<li hidden><form><label for="newItem">Next step:</label><input type="text" id="newStep" required><button>Add</button></form></li>
+					<li><button class="btn btn-default hidden">Delete Item 1</button>Item 1</li>
+					<li><button class="btn btn-default hidden">Delete Item 2</button>Item 2</li>
+					<li><button class="btn btn-default hidden">Delete Item 3</button>Item 3</li>
+					<li><button class="btn btn-default hidden">Delete Item 4</button>Item 4</li>
+					<li class="hidden"><form><label for="newItem">Next step:</label><input type="text" id="newStep" required><button>Add</button></form></li>
 				</ul>
 			</div>
 		</main>
 		<div class="l-tools">
-			<ul class="m-tools" id="ca-master-tools">
+			<ul class="m-tools list-inline" id="ca-master-tools">
 				<li><a href="#ca-master" id="ca-edit-master">Edit Master List</a></li>
 				<li><a href="#settings">Settings</a></li>
 			</ul>
-			<ul class="m-tools hidden" id="ca-list-tools">
+			<ul class="m-tools hidden list-inline" id="ca-list-tools">
 				<li><a href="#ca-master" id="ca-back-master">Back to Master List</a></li>
 				<li><a href="#ca-list">Edit This List</a></li>
 				<li><a href="#settings">Settings</a></li>

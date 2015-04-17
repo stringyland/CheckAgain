@@ -17,7 +17,7 @@ $(document).ready(function() {
 // listen for click event
 	// if edit button
 	$(editMaster).click(function(event) {
-		event.preventDefault();
+		//event.preventDefault();
 		$(masterButtons).toggleClass('hidden');
 		$(editMaster).toggleClass('is-editing');
 		if ($(editMaster).hasClass('is-editing')) {
