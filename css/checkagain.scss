@@ -1,4 +1,5 @@
 /* CSS for CheckAgain */
+
 /*
 0. SASS
 1. Base
@@ -7,62 +8,77 @@
 4. States
 
 */
+
 /* ------------------------- 
 	SASS
 ---------------------------- */
+
 /* Variables */
+$ghost: #efefef;
+$pale: #ccccff;
+$mid: #666699;
+$dark: #000033;
+$bright: #3333cc;
+$charcoal: #333333;
+
+$white : #fff;
+$black : #000;
+$error : #f00;
+$valid : #089e00;
+$warning : #fff664;
+$information : #000db5;
+
 /* ------------------------- 
 	BASE
 ---------------------------- */
+
 /* base styles provided by Bootstrap via CDN 
    overrides here */
-/* line 38, checkagain.scss */
+
 a {
-  color: #3333cc;
-  text-decoration: underline;
+	color: $bright;
+	text-decoration: underline;
 }
 
 /* ------------------------- 
 	LAYOUT
 ---------------------------- */
-/* line 47, checkagain.scss */
+
 header, main, .l-tools, footer {
-  padding: 1em 2em;
+	padding: 1em 2em;
 }
 
-/* line 51, checkagain.scss */
 .l-tools {
-  background: #efefef;
-}
+background: $ghost;}
 
-/* line 54, checkagain.scss */
 footer {
-  font-size: 0.8em;
-  color: #666699;
-}
+font-size: 0.8em;
+color: $mid;}
+
 
 /* ------------------------- 
 	MODULES
 ---------------------------- */
-/* line 64, checkagain.scss */
+
 .m-master,
 .m-list {
-  border: 1px solid #ccccff;
-  border-radius: 3px;
-}
+	border: 1px solid $pale;
+	border-radius: 3px;}
 
-/* line 69, checkagain.scss */
 .m-master li,
 .m-list li {
-  padding: 0.5em;
-}
+	padding: 0.5em;}
 
-/* line 76, checkagain.scss */
+.m-master button,
+.m-list button {
+	}
+
 .m-tools li {
-  display: inline;
-  margin-right: 2em;
-}
+	display: inline;
+	margin-right: 2em;}
+
 
 /* ------------------------- 
 	STATES
 ---------------------------- */
+
