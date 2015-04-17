@@ -1,7 +1,9 @@
 
-var masterList = $('#ca-master');
+var masterList = $('.m-master');
+var masterButtons = $('.m-master li button');
 var masterTools = $('#ca-master-tools');
 var listTools = $('#ca-list-tools');
+var editMaster =$('#ca-edit-master');
 var backToMaster = $('#ca-back-master');
 var editTextA = "Edit";
 var editTextB = "Done";
@@ -14,10 +16,15 @@ $(document).ready(function() {
 
 // listen for click event
 	// if edit button
-	$('#ca-edit-master').click(function(event) {
+	$(editMaster).click(function(event) {
 		event.preventDefault();
-		toggleEditButtons('master');
-		toggleEditText('master');
+		$(masterButtons).toggleClass('hidden');
+		$(editMaster).toggleClass('is-editing');
+		if ($(editMaster).hasClass('is-editing')) {
+			$(editMaster).text("Finish editing");
+		} else {
+			$(editMaster).text("Edit Master list");
+		}
 	});
 		// if delete button
 			// delete function: this list/item
@@ -63,7 +70,7 @@ function showList(whichTitle) {
 
 function toggleEditButtons(whichSet) {
 	if (whichSet = "master") {
-		$(masterList + ' > button').toggleClass('hidden');
+		$(masterList + ' > li > button').toggleClass('hidden');
 	} else {
 		//figure out which list or do all?
 	}

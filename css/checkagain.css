@@ -49,18 +49,14 @@ footer {
 .m-list {
   border: 1px solid #ccccff;
   border-radius: 3px;
+  padding: 1em;
+  padding-left: 2em;
 }
 
-/* line 69, checkagain.scss */
+/* line 71, checkagain.scss */
 .m-master li,
 .m-list li {
-  padding: 0.5em;
-}
-
-/* line 76, checkagain.scss */
-.m-tools li {
-  display: inline;
-  margin-right: 2em;
+  margin-bottom: 0.75em;
 }
 
 /* ------------------------- 

@@ -49,11 +49,11 @@ header, main, .l-tools, footer {
 }
 
 .l-tools {
-background: $ghost;}
+	background: $ghost;}
 
 footer {
-font-size: 0.8em;
-color: $mid;}
+	font-size: 0.8em;
+	color: $mid;}
 
 
 /* ------------------------- 
@@ -63,19 +63,19 @@ color: $mid;}
 .m-master,
 .m-list {
 	border: 1px solid $pale;
-	border-radius: 3px;}
+	border-radius: 3px;
+	padding: 1em;
+	padding-left: 2em;}
 
 .m-master li,
 .m-list li {
-	padding: 0.5em;}
+	margin-bottom: 0.75em; }
 
 .m-master button,
 .m-list button {
 	}
 
-.m-tools li {
-	display: inline;
-	margin-right: 2em;}
+.m-tools li {}
 
 
 /* ------------------------- 
