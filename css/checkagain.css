@@ -1,0 +1,81 @@
+/* CSS for CheckAgain */
+
+/*
+1. Base
+2. Layout
+3. Modules
+4. States
+
+*/
+
+/* ------------------------- 
+	BASE
+---------------------------- */
+
+/* base styles provided by pure.css via CDN */
+
+body {
+	color: #333333;
+background: #ffffff;}
+
+.button-xsmall {
+            font-size: 70%;
+        }
+
+        .button-small {
+            font-size: 85%;
+        }
+
+        .button-large {
+            font-size: 110%;
+        }
+
+        .button-xlarge {
+            font-size: 125%;
+        }
+
+
+/* ------------------------- 
+	LAYOUT
+---------------------------- */
+
+header, main, .l-tools, footer {
+	padding: 1em 2em;
+}
+
+.l-tools {
+background: #efefef;}
+
+footer {
+font-size: 0.8em;
+color: #555555;}
+
+
+/* ------------------------- 
+	MODULES
+---------------------------- */
+
+.m-master,
+.m-list {
+	border: 1px solid #eeeeee;
+border-radius: 3px;}
+
+.m-master li,
+.m-list li {
+padding: 0.5em;}
+
+.m-master button,
+.m-list button {
+margin: 0.5em;}
+
+.m-tools li {
+display: inline;
+margin-right: 2em;}
+
+
+/* ------------------------- 
+	STATES
+---------------------------- */
+
+.hidden {
+	display: none;}
