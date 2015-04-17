@@ -1,14 +1,17 @@
 
 var masterSection = $('#ca-master');
 var masterList = $('.m-master');
-var masterButtons = $('.m-master li button');
+var masterDelete = $('.m-master li button');
+var masterAdd = $('.m-master-adder');
 var masterTools = $('#ca-master-tools');
 
 var listSection = $('#ca-list-container');
 var listTools = $('#ca-list-tools');
 var listButtons = $('.m-list li button');
+
 var editMaster = $('#ca-edit-master');
 var editList = $('#ca-edit-list');
+
 var backToMaster = $('#ca-back-master');
 var editTextA = "Edit";
 var editTextB = "Done";
@@ -63,7 +66,7 @@ $(document).ready(function() {
 
 // EDIT LINKS
 function editMasterList() {
-	$(masterButtons).toggleClass('hidden');
+	$(masterDelete).add($(masterAdd)).toggleClass('hidden');
 	$(editMaster).toggleClass('js-is-editing');
 	if ($(editMaster).hasClass('js-is-editing')) {
 		$(editMaster).text("Finish editing");
@@ -73,7 +76,7 @@ function editMasterList() {
 }		
 
 function resetEditMaster() {
-	$(masterButtons).addClass('hidden');
+	$(masterDelete,masterAdd).addClass('hidden');
 	$(editMaster).removeClass('js-is-editing');
 	$(editMaster).text("Edit Master list");
 }
