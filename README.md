@@ -8,3 +8,4 @@ Edit button: show/hide editing controls
 Delete button: deletes item   
 Add button: Adds item   
 Move button: move item - must be touch and keyboard friendly  
+Change Add li to div  
