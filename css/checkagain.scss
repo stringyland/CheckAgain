@@ -61,15 +61,10 @@ footer {
 ---------------------------- */
 
 .m-master,
-.m-list {
-	border: 1px solid $pale;
-	border-radius: 3px;
-	padding: 1em;
-	padding-left: 2em;}
+.m-list {}
 
 .m-master li,
-.m-list li {
-	margin-bottom: 0.75em; }
+.m-list li {}
 
 .m-master button,
 .m-list button {

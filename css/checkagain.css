@@ -44,21 +44,6 @@ footer {
 /* ------------------------- 
 	MODULES
 ---------------------------- */
-/* line 64, checkagain.scss */
-.m-master,
-.m-list {
-  border: 1px solid #ccccff;
-  border-radius: 3px;
-  padding: 1em;
-  padding-left: 2em;
-}
-
-/* line 71, checkagain.scss */
-.m-master li,
-.m-list li {
-  margin-bottom: 0.75em;
-}
-
 /* ------------------------- 
 	STATES
 ---------------------------- */
