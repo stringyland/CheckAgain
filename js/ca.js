@@ -3,7 +3,9 @@ var masterList = $('.m-master');
 var masterButtons = $('.m-master li button');
 var masterTools = $('#ca-master-tools');
 var listTools = $('#ca-list-tools');
-var editMaster =$('#ca-edit-master');
+var listButtons = $('.m-list li button');
+var editMaster = $('#ca-edit-master');
+var editList = $('#ca-edit-list');
 var backToMaster = $('#ca-back-master');
 var editTextA = "Edit";
 var editTextB = "Done";
@@ -14,18 +16,26 @@ $(document).ready(function() {
 // remove anything that's replaced by js-dependant stuff
 
 
-// listen for click event
-	// if edit button
-	$(editMaster).click(function(event) {
-		//event.preventDefault();
-		$(masterButtons).toggleClass('hidden');
-		$(editMaster).toggleClass('is-editing');
-		if ($(editMaster).hasClass('is-editing')) {
-			$(editMaster).text("Finish editing");
-		} else {
-			$(editMaster).text("Edit Master list");
-		}
-	});
+
+$(editMaster).click(function(event) {
+	$(masterButtons).toggleClass('hidden');
+	$(editMaster).toggleClass('js-is-editing');
+	if ($(editMaster).hasClass('js-is-editing')) {
+		$(editMaster).text("Finish editing");
+	} else {
+		$(editMaster).text("Edit Master list");
+	}
+});
+$(editList).click(function(event) {
+	$(listButtons).toggleClass('hidden');
+	$(editList).toggleClass('js-is-editing');
+	if ($(editList).hasClass('js-is-editing')) {
+		$(editList).text("Finish editing");
+	} else {
+		$(editList).text("Edit this list");
+	}
+});
+
 		// if delete button
 			// delete function: this list/item
 		// if move button
