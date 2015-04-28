@@ -28,7 +28,7 @@ $(document).ready(function() {
 		editMasterList();
 	});
 	$(editList).click(function(event) {
-		editListList();
+		editListList();	
 	});
 	
 	// BACK LINKS
@@ -67,6 +67,7 @@ $(document).ready(function() {
 // EDIT LINKS
 function editMasterList() {
 	$(masterDelete).add($(masterAdd)).toggleClass('hidden');
+	loadListForm();
 	$(editMaster).toggleClass('js-is-editing');
 	if ($(editMaster).hasClass('js-is-editing')) {
 		$(editMaster).text("Finish editing");
@@ -89,6 +90,7 @@ function resetEditList() {
 	
 function editListList() {
 	$(listButtons).toggleClass('hidden');
+	loadItemForm();
 	$(editList).toggleClass('js-is-editing');
 	if ($(editList).hasClass('js-is-editing')) {
 		$(editList).text("Finish editing");
@@ -115,4 +117,22 @@ function showList(whichTitle) {
 function switchTools(){
 	listTools.toggleClass('hidden');
 	masterTools.toggleClass('hidden');
+}
+
+// MUSTACHE 
+
+function loadListForm() {
+  $('#js-master-list').append('<li class="m-master-adder list-group-item" id="js-master-adder"></li>');
+  var template = $('#js-newList').html();
+  Mustache.parse(template);   // optional, speeds up future uses
+  var rendered = Mustache.render(template);
+  $('#js-master-adder').html(rendered);
+}
+
+function loadItemForm() {
+  $('.js-list-list').append('<li class="list-group-item" id="js-list-adder"></li>');
+  var template = $('#js-newStep').html();
+  Mustache.parse(template);   // optional, speeds up future uses
+  var rendered = Mustache.render(template);
+  $('#js-list-adder').html(rendered);
 }
